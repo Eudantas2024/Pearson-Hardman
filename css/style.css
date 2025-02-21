@@ -325,3 +325,55 @@ border-top: 1px solid var(--secondary-text-color);
 .author .author-job{
     color: var(--secondary-text-color);
 }
+
+/* Colaboradores */
+#team{
+   align-items: center; 
+   
+    
+}
+
+#team h2{
+    /* justify-content: center; */
+    margin: 0 auto;
+    /* align-items: center; */
+    
+}
+
+span{
+    color: var(--main-color);   
+    align-items: center;
+}
+
+span .square{
+    /* display: flex; */
+    align-items: center;
+    
+}
+
+.employees{
+    display: flex;   /* display flex, alinha as caixas lado a lado*/
+    align-items: center;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.employees img{
+    width: 400px;
+    height: 400px;
+}
+
+.employee{
+    align-items: center;
+    justify-content: center;
+
+}
+
+.employees .employee-name{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    
+
+}
