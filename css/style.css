@@ -328,15 +328,17 @@ border-top: 1px solid var(--secondary-text-color);
 
 /* Colaboradores */
 #team{
-   align-items: center; 
-   
-    
+   /* margin: 0 auto; */
+   text-align: center;   
 }
 
 #team h2{
-    /* justify-content: center; */
+    justify-content: center;
+    width: 600px;
     margin: 0 auto;
-    /* align-items: center; */
+    align-items: center;
+    padding: 2rem;
+    font-size: 2rem;
     
 }
 
@@ -347,15 +349,19 @@ span{
 
 span .square{
     /* display: flex; */
+    justify-content: center;
+    margin: 0 auto;
     align-items: center;
     
 }
 
 .employees{
-    display: flex;   /* display flex, alinha as caixas lado a lado*/
-    align-items: center;
-    margin: 0 auto;
+    display: flex; 
+    justify-content: center;
+    /* align-items: center; */
+    /* margin: 0 auto; */
     gap: 2rem;
+    padding-bottom: 2rem;
 }
 
 .employees img{
