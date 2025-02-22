@@ -348,7 +348,6 @@ span{
 }
 
 span .square{
-    /* display: flex; */
     justify-content: center;
     margin: 0 auto;
     align-items: center;
@@ -358,8 +357,6 @@ span .square{
 .employees{
     display: flex; 
     justify-content: center;
-    /* align-items: center; */
-    /* margin: 0 auto; */
     gap: 2rem;
     padding-bottom: 2rem;
 }
@@ -369,17 +366,8 @@ span .square{
     height: 400px;
 }
 
-.employee{
-    align-items: center;
-    justify-content: center;
-
-}
-
 .employees .employee-name{
     color: var(--main-color);
     text-transform: uppercase;
     font-weight: bold;
-    
-    
-
 }
