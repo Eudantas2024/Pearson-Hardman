@@ -331,6 +331,8 @@ border-top: 1px solid var(--secondary-text-color);
    text-align: center;   
    padding-bottom: 3rem;
    
+
+   
 }
 
 #team h2{
@@ -357,6 +359,7 @@ span .square{
 
 .employees{
     display: flex; 
+    flex-wrap: wrap;
     justify-content: center;
     gap: 3.5rem;
     padding-bottom: 2rem;
@@ -442,12 +445,118 @@ span .square{
     color: var(--main-color);
 }
 
+/* ---- FOOTER ---- */
 
 
+/* Essa função deixa todo o fundo do rodapé em cor configurada marrom, coloca as box alinhadas horizontalmente */
+  #footer {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 3rem 5rem;
+}
 
-/* #contact-image-container{
-    flex: 1;
-} */
+
+/* Altera o tamanho dos icones */
+#footer i {
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+/* Deixa o texto dentro da caixa na cor informada, no caso branco */
+#footer a {
+  color: var(--primary-text-color);
+}
 
 
-/* caracteristicas de layout, placeholder,  */
+/* Altera o espaçamento das colunas do footer */
+.contact-info,
+.links-container {
+  width: 20%;
+}
+
+/* Adiciona espaçamento na parte de baixo da caixa como o nome da empresa afastando-a da caixa de endereço */
+.footer-brand {
+  margin-bottom: 2rem;
+}
+
+ /* Cria uma caixa com fundo vermelho destacando o nome da empresa */
+.footer-brand h2 {
+  background-color: var(--main-color);
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+
+/* Adiciona espaçamento entre as linhas de texto da caixa de endereço */
+.contact-info p {
+  margin-bottom: 1rem;
+}
+
+
+/* Deixa as caixas de fundo vermelho dos icones transparentes, ressaltando apenas o icone */
+.contact-info p i {
+  background-color: transparent;
+  padding: 0;
+  color: var(--main-color);
+}
+
+/* Coloca espaçamento na parte de baixo da caixa de icones "siga-nos", afasta o texto dos icones em direção para baixo */
+.social-networks p {
+  margin-bottom: 1rem;
+}
+
+
+/* Adicona espaçamento entre os icones da caixa "siga-nos" */
+.networks {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+
+/* Altera o tamanho dos icones da caixa "siga-nos" */
+#footer .networks i {
+  padding: 1rem;
+}
+
+
+/* Deixa o texto todo em maiusculo nas caixas titulos de cada coluna */
+.links-container h4 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+/* Define a largura do texto dentro da caixa */
+.links-container nav {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Coloca linha na parte de baixo de cada caixa, para destacar o texto */
+.links-container nav a {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+/* Alinha em horizontal o icone de telefone e o numero de telefone */
+.phone-number {
+  display: flex;
+  border: 1px solid var(--main-color);
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Altera a cor do texto da caixa de informações sobre o telefone para cor cinza
+, desta forma esse texto não chama tanta atenção quanto o do telefone */
+
+.phone-info {
+  color: var(--secondary-color);
+}
+
+
+/* ---- FIM ----- */
