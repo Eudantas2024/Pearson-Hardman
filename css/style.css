@@ -419,14 +419,26 @@ span .square{
 #contact-information form{
     display: flex;
     flex-direction: column;
+ 
     gap: 1rem;
 }
 
-#contact-informaation .form-control{
+#contact-information .form-control{
     display: flex;
-
     gap: 1rem;
 }
+
+#contact-information .form-control #name{
+    padding: 0.6rem;
+}
+#contact-information .form-control #email{
+    padding: 0.6rem;
+    width: 100%;
+   }
+#contact-information #phone{
+    padding: 0.6rem;
+   }
+   
 
 #contact-information textarea{
     flex: 0.5;
