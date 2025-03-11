@@ -419,17 +419,43 @@ span .square{
 #contact-information form{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     gap: 1rem;
 }
 
 #contact-informaation .form-control{
+=======
+ 
+    gap: 1rem;
+}
+
+#contact-information .form-control{
+>>>>>>> main
     display: flex;
     gap: 1rem;
 }
 
+<<<<<<< HEAD
 #contact-information textarea{
     flex: 0.5;
     padding: 1rem;
+=======
+#contact-information .form-control #name{
+    padding: 0.6rem;
+}
+#contact-information .form-control #email{
+    padding: 0.6rem;
+    width: 100%;
+   }
+#contact-information #phone{
+    padding: 0.6rem;
+   }
+   
+
+#contact-information textarea{
+    flex: 0.5;
+    padding: 2rem;
+>>>>>>> main
     border: none;
 }
 
@@ -557,6 +583,159 @@ span .square{
 .phone-info {
   color: var(--secondary-color);
 }
+<<<<<<< HEAD
 
 
 /* ---- FIM ----- */
+=======
+/* fim do rodapé */
+
+
+/* Mobile navbar */
+#menu,
+#close-menu{
+    font-size: 2rem;
+    padding: 1rem;
+    display: none;
+}
+
+#close-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#mobile-navbar{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    /* rgba = a é a transparencia de fundo */
+    background-color: rgba(0,0,0,0.95);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    transition: 0.4s;
+    z-index: 5;
+
+}
+
+#mobile-navbar.menu-active{
+    left: 0;
+}
+
+#mobile-navbar a{
+    color: var(--primary-text-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--main-color);
+
+}
+
+
+
+/* @media = midia query, são as configurações responsíveis para mobile (celular)  */
+
+@media (max-width:450px){
+
+    body{
+        /* esconder o scrool lateral se sobrar a direita */
+        overflow-x: hidden;      
+    }
+    i {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+    #navbar{
+        display: none;
+    }
+    #menu,
+    #close-menu{
+        display:block;
+    }
+/* banner e texto do banner */
+    .banner{
+        max-width: 100%;
+        padding: 4rem 2rem;
+    }
+    .banner h2{
+        font-size: 3rem;
+    }
+    .banner p{
+        font-size: 1.2rem;
+    }
+/* areas de atuação */
+    .btn{
+        /* align self vai fazer o alinhamento só no botão */
+        align-self: initial;
+    }
+    .image-container{
+        flex: 1 1 100%;
+    }
+    #other-services{
+        flex-wrap: wrap;
+    }
+/* sobre nós */
+    #about{
+        
+
+    }
+    #about-text,
+    #about-data{
+        flex: 1 1 100%;
+    }
+    .about-description{
+        gap: 1rem;
+    }
+    .about-description i{
+        padding: 0;
+        min-width: 40px;
+    }
+    #about #about-data .data{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--secondary-text-color);
+    }
+    #about #about-data .data i{
+        font-size: 2.2rem;
+    }
+/* Depoimentos */
+    .text-container{
+        text-align: center;
+        padding: 2rem;
+    }
+/* Colaboradores */
+    #team{
+        margin-top: 2rem;
+        
+    }
+    #team h2{
+        font-size: 2rem;
+        max-width: 100%;
+    }
+    .employees{
+        /* flex-direction: column */
+        flex-wrap: wrap;
+    }
+    /* contato */
+    #contact{
+        padding-bottom: 0;
+    }
+    #contact-information{
+        padding: 7rem 1rem;
+    }
+    #contact-information .form-control{
+        flex-direction: column;
+
+    }
+    #contact-information .btn{
+        align-self: auto;
+    }
+
+
+}
+
+>>>>>>> main
